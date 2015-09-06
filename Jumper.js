@@ -21,7 +21,7 @@ function procCmd(cmd) {
   if (command[0] == 'jumper') {
     switch (command[1]) {
       case 'set':
-        if (command[2] > 5 || command[2] < 1) {
+        if (command[2] > 5 || command[2] < 0) {
           clientMessage(ChatColor.RED + '당신이 지정할 수 있는 블럭 저장소는 0~4입니다.');
           break;
         }
