@@ -50,7 +50,7 @@ function procCmd(cmd) {
 
 function jump() {
   for (var i = 0; i < jBlock.length; i++) {
-    if (getTile(pos.x, pos.y, pos.z) == jBlock[i.id]) {
+    if (getTile(pos.x, pos.y - 1, pos.z) == jBlock[i.id]) {
       setVelY(pos.p, jBlock[i.height]);
     }
   }
